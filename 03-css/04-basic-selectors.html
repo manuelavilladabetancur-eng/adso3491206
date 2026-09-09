@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>04-basics selectores</title>
+    <title>04-Basic selectors</title>
     <link rel="stylesheet" href="../src/css/styles.css">
     <style>
-        /* universal selector*/
-        /* {border: 1px salid yellow} */
-        /* merge selectors */
-        * {border: 1px solid, yellow; }
-        section#sec01 h4 {
+        * {border: 1px solid, rgb(13, 140, 199); }
+        section#sec01 h4{
             color: #ab7dd9;
             border: none;
             text-align: center;
-            &.upper {text-transform: uppercase; }
+            &.upper {text-transform: uppercase;}
             &.rotate {transform: rotate(-45deg);}
-            &.txt-lg {font-size: 4rem;}
+            &.txt-lg{font-size: 4rem;}
+        }
     </style>
 </head>
 <body class="css"> 
@@ -27,22 +25,22 @@
     </nav>
     <main>
         <header class="mainmenu internal">
-            <h1>04-basics selectores</h1>
-            <img src="../src/imgs/logo-css.png" alt="css">
+            <h1>04-Basic selectors</h1>
+            <img src="../src/logo-css.png" alt="Profile">
             <ul>
                 <li>Universal (*)</li>
-                <li>Type / Tag (p)</li>
+                <li>Type / Tag(p)</li>
                 <li>Descending (div p)</li>
                 <li>Class (.important)</li>
                 <li>ID (#cod389)</li>
                 <li>Merge (div#user3 p.title)</li>
-                <li>Group: (div.lg, div .sm)</li>
+                <li>Group: (div.ig, div.sm)</li>
             </ul>
-            <h3>Description.</h3>
         </header>
-        <section>
-            <h2 class="subtitle">example</h2>
-            <h4 class="upper rotate txt-lg"></h4>
+        <section id="sec01">
+            <h2 class="subtitle">Example:</h2>
+            <h4 class="upper rotate txt-lg">Adso</h4>
+
         </section>
         </main>
 </body>
