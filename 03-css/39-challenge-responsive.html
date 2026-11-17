@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+        }
+
+        body {
+            background:linear-gradient(#2b1a0fd9, #4a2c1ae6),
+                       url(../src/imgs/oso\ pardo.jpeg) center/cover fixed no-repeat;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: 1000px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            background: url(../src/imgs/logo_de_osos-removebg-preview.png) no-repeat center;
+            background-size: contain;
+            height: 160px;
+            width: 400px;
+            max-width: 100%;
+            margin: 0 auto 15px;
+        }
+
+        header h1 {
+            color: #ffd9a0;
+            font-size: 2.3rem;
+        }
+
+        .contenedor {
+            max-width: 100%;
+            width: 960px;
+            padding: 20px 70px;
+            margin: 0 auto;
+            cursor: pointer;
+            text-align: center;
+            background: linear-gradient( 135deg,#3d2415ee,#1f120ae6);
+            border: 2px solid #c97b3c;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #0009;
+            margin-bottom: 30px;
+        }
+
+        .carta {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 185px;
+            margin: 10px;
+            background-color: #2a1a10;
+            border: 2px solid #c97b3c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #0009;
+        }
+
+        .carta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px #e8a55c99;
+        }
+
+        .carta img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .etiqueta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 5px;
+            background-color: #3d2415dd;
+            color: #ffe8cc;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .bloque {
+            margin-bottom: 25px;
+            padding: 30px;
+            background-color: #2a1a10cc;
+            border: 1px solid #c97b3c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #0006;
+        }
+
+        .bloque img {
+            float: left;
+            width: 180px;
+            height: 185px;
+            object-fit: cover;
+            margin-right: 25px;
+            border-radius: 12px;
+            border: 3px solid #c97b3c;
+        }
+        .descripcion {
+            overflow: hidden;
+            font-size: 1rem;
+            color: #f5e6d3;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .descripcion h2 {
+            color: #ffd9a0;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 1023px) {
+            main {
+                width: 700px;
+            }
+
+            .contenedor {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            header {
+                padding: 15px 5px;
+            }
+
+            .logo {
+                width: 100%;
+                height: 220px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.8rem;
+            }
+
+            .contenedor {
+                width: 100%;
+                padding: 25px 10px;
+                text-align: center;
+            }
+
+            .carta {
+                width: 200px;
+                margin: 10px auto;
+            }
+
+            .carta img {
+                height: 220px;
+            }
+
+            .bloque {
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .bloque img {
+                float: none;
+                display: block;
+                width: 180px;
+                height: 180px;
+                margin: 0 auto 20px;
+            }
+
+            .descripcion {
+                font-size: 0.9rem;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .descripcion h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <header>
+
+        <figure class="logo"></figure>
+
+    </header>
+
+    <div class="contenedor">
+
+        <div class="carta">
+            <img src="../src/imgs/oso con buso.jpeg" alt="choso">
+            <div class="etiqueta">oso con buso</div>
+        </div>
+
+        <div class="carta">
+            <img src="../src/imgs/oso con galletas.jpeg" alt="gojo">
+            <div class="etiqueta">oso con galletas</div>
+        </div>
+
+        <div class="carta">
+            <img src="../src/imgs/oso corazon.jpeg" alt="megumi">
+            <div class="etiqueta">oso corazon</div>
+        </div>
+
+        <div class="carta">
+            <img src="../src/imgs/oso mirando por la ventana.jpeg" alt="sukuna">
+            <div class="etiqueta">oso mirando por una ventana</div>
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../src/imgs/oso con buso.jpeg" alt="choso">
+
+        <div class="descripcion">
+            <h2>oso con buso</h2>
+
+            Un tierno osito blanco con un traje beige, mejillas rosadas y grandes ojos negros, sosteniendo una taza de chocolate caliente. 🧸☕💕
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../src/imgs/oso con galletas.jpeg" alt="gojo">
+
+        <div class="descripcion">
+            <h2>oso con galletas</h2>
+              Un tierno osito con sudadera rosada, preparando y disfrutando unas deliciosas galletas con forma de panda. 🐼💕
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../src/imgs/oso corazon.jpeg" alt="megumi">
+
+        <div class="descripcion">
+            <h2>oso corazon</h2>
+
+           Un tierno osito color beige con un lazo rosado, abrazando un corazón rosa con una carita sonriente. 🧸💕
+        </div>
+
+    </div>
+
+    <div class="bloque">
+
+        <img src="../src/imgs/oso mirando por la ventana.jpeg" alt="sukuna">
+
+        <div class="descripcion">
+            <h2>oso mirando por la ventana</h2>
+
+            Un tierno osito blanco mirando por la ventana de un carro mientras disfruta de un hermoso atardecer junto al paisaje. 🐻🌅💕
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
